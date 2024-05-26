@@ -28,8 +28,8 @@ const Banner = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-4">
-      <div className="flex flex-col md:flex-row gap-4 ">
-        <div className="md:w-[20%] bg-white border rounded-xl text-[#757575]">
+      <div className="flex flex-col lg:flex-row gap-4 ">
+        <div className="lg:w-[20%] hidden lg:block bg-white border rounded-xl text-[#757575]">
           <div className="hover:bg-[#f5f5f5] p-2 mt-2 flex items-center gap-2 hover:text-red-500 cursor-pointer text-sm  font-semibold ">
             <GrRestroomWomen className="rounded-full " />
             <p>Women's & Girls' Fashion</p>
@@ -71,7 +71,7 @@ const Banner = () => {
             <IoIosArrowForward className="after:hidden" />
           </div>
         </div>
-        <div className="md:w-[80%]">
+        <div className="lg:w-[80%]">
           <>
             {/*<!-- Component: Slider with indicators & controls inside --> */}
             <div className="relative w-full glide-03">

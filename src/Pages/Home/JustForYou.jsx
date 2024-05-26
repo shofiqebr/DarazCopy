@@ -169,7 +169,7 @@ const JustForYou = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-12">
       <h1 className="text-xl font-semibold">Just For You</h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-4 ">
         {cards.map((card) => (
           <JustForYouCard key={card.id} card={card}></JustForYouCard>
         ))}

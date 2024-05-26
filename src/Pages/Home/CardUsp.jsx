@@ -1,6 +1,6 @@
 const CardUsp = () => {
   return (
-    <div className="max-w-screen-xl bg-[#fff1eba1] hover:bg-[#fff1eb] rounded-xl mx-auto px-4 mt-1">
+    <div className="max-w-screen-xl hidden lg:block bg-[#fff1eba1] hover:bg-[#fff1eb] rounded-xl mx-auto px-4 mt-1">
       <ul className="p-2 flex flex-wrap  items-center justify-between cursor-pointer gap-4 md:gap-3">
         <li className="flex items-center  gap-2">
           <img
