@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { TbCurrencyTaka } from "react-icons/tb";
 
 const FlashSaleCard = () => {
-
-  const [datas, setGroups] = useState([]);
+  const [groups, setGroups] = useState([]);
 
   // const data = [
   //   {
@@ -44,7 +43,6 @@ const FlashSaleCard = () => {
   //   },
   // ];
 
-  
   useEffect(() => {
     fetch(
       `https://erpmethods.vercel.app/gets/Item Group?filters=[["show_in_website", "=", 1]]&fields=["idx","route","name", "image"]`,
@@ -64,7 +62,7 @@ const FlashSaleCard = () => {
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-4 ">
-      {datas.map((item, id) => {
+      {groups?.map((item, id) => {
         return (
           <div className="hover:shadow hover:border" key={id}>
             <img src={item.image} alt="" />

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CategoryCard from "../../Components/CategoryCard/CategoryCard";
 
 const Categories = () => {
-  const [datas, setGroups] = useState([]);
+  const [groups, setGroups] = useState([]);
   // const categories = [
   //   {
   //     id: 1,
@@ -107,7 +107,7 @@ const Categories = () => {
     <div className="max-w-screen-xl mx-auto px-4 mt-8 ">
       <h1 className="text-xl font-semibold">Categories</h1>
       <div className="bg-white grid grid-cols-3 lg:grid-cols-8 mt-5">
-        {datas?.map((category, ids) => (
+        {groups?.map((category, ids) => (
           <CategoryCard key={ids} category={category}></CategoryCard>
         ))}
       </div>

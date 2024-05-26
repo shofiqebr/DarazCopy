@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import JustForYouCard from "../../Components/JustForYouCard/JustForYouCard";
 
 const JustForYou = () => {
-  const [datas, setGroups] = useState([]);
+  const [groups, setGroups] = useState([]);
 
   // const cards = [
   //   {
@@ -186,12 +186,11 @@ const JustForYou = () => {
       });
   }, []);
 
-
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-12">
       <h1 className="text-xl font-semibold">Just For You</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-4 ">
-        {datas?.map((card, ids) => (
+        {groups?.map((card, ids) => (
           <JustForYouCard key={ids} card={card}></JustForYouCard>
         ))}
       </div>
