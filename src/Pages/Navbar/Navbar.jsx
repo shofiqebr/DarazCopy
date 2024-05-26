@@ -49,7 +49,7 @@ const Navbar = () => {
                 name="id-s03"
                 placeholder="Search in Daraz"
                 aria-label="Search content"
-                className="lg:w-[500px] md:w-[500px] peer font-semibold relative h-10 rounded-xl border px-4 pr-12 text-sm text-slate-500 outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none border-none  invalid:focus:border-pink-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                className="lg:w-[500px] md:w-[500px] w-[300px] peer font-semibold relative h-10 rounded-xl border px-4 pr-12 text-sm text-slate-500 outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none border-none  invalid:focus:border-pink-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
               />
               <div className="absolute top-1 right-3 bg-[#ffe1d2] px-3 rounded-md py-1">
                 <IoSearchSharp className="text-2xl text-[#f85606]" />

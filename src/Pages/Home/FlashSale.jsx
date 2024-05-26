@@ -7,9 +7,9 @@ const FlashSale = () => {
       <h1 className="text-xl font-medium">FlashSale</h1>
       <div className="flex flex-col bg-[#ff6801] p-3 lg:bg-white rounded-md md:flex-row gap-2 justify-between mt-3">
         <div className="flex items-center justify-between lg:gap-16">
-          <p className=" text-sm font-bold text-white">On Sale Now</p>
+          <p className=" text-sm font-bold text-white lg:text-[#ff6801]">On Sale Now</p>
           <div className="flex items-center gap-2">
-            <p className="text-sm font-bold text-white">Ending in</p>
+            <p className="text-sm font-bold text-white lg:text-[#ff6801]">Ending in</p>
             <p className="border py-1 px-2 text-white bg-[#ff6801]">10</p> :
             <p className="border py-1 px-2 text-white bg-[#ff6801]">06</p> :
             <p className="border py-1 px-2 text-white bg-[#ff6801]">12</p>

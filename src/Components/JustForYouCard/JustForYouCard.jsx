@@ -14,7 +14,7 @@ const JustForYouCard = ({ card }) => {
           {price}
         </p>
         <p className="text-sm">
-          <del className="text-[#9e9e9e]">{percentage % price}</del>{" "}
+          <del className="text-[#9e9e9e]">{(percentage % price).toFixed(2)}</del>{" "}
           {percentage} %
         </p>
         <div className="flex items-center gap-2 text-[12px]">
