@@ -2,6 +2,10 @@ import FlashSaleCard from "../../Components/FlashSaleCard/FlashSaleCard";
 
 
 const FlashSale = () => {
+
+
+
+  
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-12">
       <h1 className="text-xl font-medium">FlashSale</h1>
