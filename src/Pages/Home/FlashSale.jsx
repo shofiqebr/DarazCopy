@@ -2,10 +2,6 @@ import FlashSaleCard from "../../Components/FlashSaleCard/FlashSaleCard";
 
 
 const FlashSale = () => {
-
-
-
-  
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-12">
       <h1 className="text-xl font-medium">FlashSale</h1>
@@ -19,8 +15,8 @@ const FlashSale = () => {
             <p className="border py-1 px-2 text-white bg-[#ff6801]">12</p>
           </div>
         </div>
-        <div className="text-center hidden lg:block">
-          <button className="border px-4 py-2 border-[#ff6801] rounded-md ">
+        <div className="text-center hidden md:block">
+          <button className="border px-4 py-2 border-[#ff6801] md:border-white md:text-white lg:text-[#ff6801] lg:border-[#ff6801] text-[#ff6801] rounded-md ">
             SHOP MORE
           </button>
         </div>
