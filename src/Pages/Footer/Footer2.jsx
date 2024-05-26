@@ -2,7 +2,7 @@ const Footer2 = () => {
   return (
     <footer className="bg-[#f1f1f1]">
       <div className="max-w-screen-xl mx-auto px-4 pt-6 pb-12 text-[#888]">
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div>
             <h1 className="text-[18px] font-semibold">
               Experience Personalized Online Shopping in Bangladesh with
@@ -69,7 +69,57 @@ const Footer2 = () => {
               ইলেকট্রনিক্স উইক , Grand Eid Fest , গ্র্যান্ড ঈদ ফেস্ট
             </p>
           </div>
-          <div></div>
+          <div>
+            <h1 className="text-xl">Top Categories & Brands</h1>
+            <p className="mt-3">MOBILE PHONES</p>
+            <p className="text-[12px]">
+              Xiaomi Mobile, Samsung Mobile, Huawei Mobile, Symphony Mobile,
+              Nokia Mobile, OnePlus Mobile, realme Mobile, Infinix Mobile, Oppo
+              Mobile, Vivo Mobile
+            </p>
+            <h1 className="mt-5">MOBILE ACCESSORIES</h1>
+            <p className="text-[12px]">
+              Earphone, Phone Cover, Mobile Charger, Mobile Battery, Power Bank,
+              Memory Card, Smart Watch
+            </p>
+            <h1 className="mt-5">LAPTOPS</h1>
+            <p className="text-[12px]">
+              HP Laptops, Dell Laptops, Asus Laptops, Lenovo Laptops, Graphics
+              Card
+            </p>
+            <h1 className="mt-5">LED TV</h1>
+            <p className="text-[12px]">
+              Sony Led TV, Samsung Led TV, LG Led TV, Singer Led TV, 17 Inch LED
+              TV, 19 Inch LED TV, 21 Inch LED TV, 24 Inch LED TV, 28 Inch LED
+              TV, 32 Inch LED TV, 40 Inch LED TV, 42 Inch LED TV, 48 Inch LED
+              TV, 50 Inch LED TV, 55 Inch LED TV
+            </p>
+            <h1 className="mt-5">HOME APPLIANCES</h1>
+            <p className="text-[12px]">
+              Air Conditioners, Refrigerators, Deep Freezers, Generators, UPS
+              Battery, Washing Machines, Heaters, Solar Panel, Lenovo HE05
+              Earphone, DSLR Cameras, Air Cooler, Microwave Oven, Water Filters
+            </p>
+            <h1 className="mt-5">TRENDING NOW</h1>
+            <p className="text-[12px]">
+              BTS Mask, BTS Bag, BTS Notebook, Autocad, Beard Growth Oil, BTS
+              Army Bomb, Mira Fan, 24K Gold Soap, Agar Agar Powder, Vintage T9
+              Trimmer, Jolochip, IPS Machine, GFC Stand Fan, BMW Umbrella, TWS
+              F9, K8 Microphone, Colmi P28 Plus, realme C35 Back Cover,
+              Muuchstac Face Wash, Haylou RS4 Plus Smartwatch, Helfit Tablet,
+              T500 Smart Watch, Red Bull, Quran Sharif, Rahimafrooz IPS, Reading
+              Table, WGP Mini UPS, KALBOR Watch, Xiaomi Solove F5, UiiSii HM13,
+              Rich Dad Poor Dad, Kieslect KR Pro, Epson l130, SKMEI 1787,
+              Jafran, RFL Almirah, Geo R11, Lamborghini Shoes, Nizoder Shampoo,
+              Rado Watch, Joyroom T03s Pro, W Collagen Juice, Kiss Beauty Lip
+              Oil, RSL Racket, Hotpot, Yonex Carbonex 35, Golden wing TRUE
+              GW970, Sakura Plum, Vitamin E Cream, Wall Cabinet, Heavy Metal
+              T-shirt, Green Mask Stick, REMAX RM-510, D116 Smart Watch, Watch
+              price in bangladesh
+            </p>
+            <h1 className="mt-4">TOP BEAUTY PRODUCTS</h1>
+            <p className="text-[12px]">Night Cream For Women, Eye Brush Set, Soap Dispenser, Highlighter Palette, Black Head Remover, Harbal Hair Oil, Waterproof Eyeliner, Hair Fall Control Shampoo, Pad For Women, Lip Oil, Aloe Vera Gel, Perfume For Women, Onion Oil For Hair, Matte Lipstick Set, Body Mist For Women, Hair Dryer For Women, Skin Care Products Combo, Moisturizer Cream, Coconut Hair Oil For Women, Electric Toothbrush, Sunscreen Cream For Oily Skin, Lafz Halal Lipstick, Ponds Super Light Gel Moisturizer, Capsule Lipstick Set, Brush Hair Dryer, Shaver Trimmer For Men, Eyeshadow Palette, Face Mask Pack, Hair Straightener Cream, Lip Balm Chapstick, Tea Tree Face Wash, Glitter Nail Polish</p>
+          </div>
           <div>
             <h1>BEST-SELLING PRODUCTS</h1>
             <p className="text-[12px]">
@@ -99,6 +149,19 @@ const Footer2 = () => {
               A73, Samsung Galaxy M53, Infinix Smart 6 Plus, Infinix Hot 12
               Play, Xiaomi Poco C31, Xiaomi Redmi 10a, Xiaomi Redmi 10c, Xiaomi
               12 Pro, Xiaomi Redmi A1, Xiaomi Redmi A1 Plus
+            </p>
+            <h1 className="mt-3">SHOP WORLDWIDE WITH LAZADA</h1>
+            <p className="text-[12px]">
+              Singapore, Malaysia, Philipines, Indonesia, Vietnam, Thailand
+            </p>
+            <h1 className="mt-3">TRENDING LOCAL SEARCH</h1>
+            <p className="text-[12px]">
+              কানের দুলের ডিজাইন, বোরকা ডিজাইন, খাটের ডিজাইন, জুতা, মোবাইল ফোনের
+              দাম, থ্রি পিস, চটি জুতা, জার্সি ডিজাইন, মোটর সাইকেল, শাড়ি,
+              ড্রেসিং টেবিল, হিসাব বিজ্ঞান বই, ছেলেদের টি-শার্ট, সালোয়ার কামিজ,
+              ফ্যান, এসি, এয়ার কুলার, টেবিল ফ্যান, ফ্রিজ, বাংলাদেশের খেলা লাইভ,
+              দারাজ ১১.১১ ক্যাম্পেইন, হেলফিট ট্যাবলেট, কাতিলা গাম, স্ক্রু ক্রিম,
+              ইলেকট্রিক জিনিস, লাইট, লুব্রিকেন্ট জেল, সাবান
             </p>
           </div>
         </div>
