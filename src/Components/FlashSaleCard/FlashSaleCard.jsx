@@ -44,7 +44,7 @@ const FlashSaleCard = () => {
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-4 ">
       {data.map((item, id) => {
         return (
-          <div className="hover:shadow-xl hover:border" key={id}>
+          <div className="hover:shadow hover:border" key={id}>
             <img src={item.image} alt="" />
             <div className="p-3">
               <p>{item.name}</p>

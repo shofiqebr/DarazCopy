@@ -3,6 +3,7 @@ import Usage from "../../Components/Usage/Usage";
 import CardUsp from "./CardUsp";
 import Categories from "./Categories";
 import FlashSale from "./FlashSale";
+import JustForYou from "./JustForYou";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Usage />
       <CardUsp />
       <FlashSale />
+      <JustForYou />
       <Categories />
     </div>
   );
