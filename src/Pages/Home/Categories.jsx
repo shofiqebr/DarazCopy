@@ -88,7 +88,7 @@ const Categories = () => {
 
   useEffect(() => {
     fetch(
-      `https://erpmethods.vercel.app/gets/Item Group?filters=[["show_in_website", "=", 1]]&fields=["idx","route","name", "image"]`,
+      `https://erpmethods.vercel.app/gets/Website Item`,
       {
         headers: {
           url: "https://ecommerce.ionicerp.xyz/",
@@ -102,6 +102,8 @@ const Categories = () => {
         setGroups(data);
       });
   }, []);
+
+  console.log(groups);
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-8 ">

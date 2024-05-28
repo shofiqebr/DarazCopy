@@ -4,6 +4,7 @@ import Footer from "./Pages/Footer/Footer";
 import Footer2 from "./Pages/Footer/Footer2";
 
 const Root = () => {
+ 
   return (
     <div className="bg-[#f5f5f5]">
       <Navbar />

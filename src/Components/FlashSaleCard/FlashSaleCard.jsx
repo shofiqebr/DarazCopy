@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { TbCurrencyTaka } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const FlashSaleCard = () => {
   const [groups, setGroups] = useState([]);
@@ -60,12 +61,14 @@ const FlashSaleCard = () => {
       });
   }, []);
 
+
+
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-4 ">
       {groups?.map((item, id) => {
         return (
-          <div className="hover:shadow hover:border" key={id}>
-            <img src={item.image} alt="" />
+          <Link to="/details" className="hover:shadow hover:border" key={id}>
+            <img className="w-full lg:w-96 " src={`https://ecommerce.ionicerp.xyz${item.image}`} alt="" />
             <div className="p-3">
               <p>{item.name}</p>
               <p className="flex items-center text-[#ff6801] text-[17px]">
@@ -77,7 +80,7 @@ const FlashSaleCard = () => {
                 {item.discount_percentage + item.price} %
               </p> */}
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>

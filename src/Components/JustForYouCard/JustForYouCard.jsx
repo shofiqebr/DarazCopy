@@ -6,7 +6,7 @@ const JustForYouCard = ({ card }) => {
   const { image, name, } = card || {};
   return (
     <div className="bg-white hover:shadow hover:border cursor-pointer rounded">
-      <img src={image} alt="" />
+      <img src={`https://ecommerce.ionicerp.xyz/${image}`} alt="" />
       <div className="p-3 space-y-1">
         <h1 className="font-semibold">{name}</h1>
         {/* <p className="flex font-bold items-center text-[#ff6801] text-[18px]">

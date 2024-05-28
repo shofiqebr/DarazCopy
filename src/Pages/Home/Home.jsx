@@ -11,9 +11,9 @@ const Home = () => {
       <Banner />
       <Usage />
       <CardUsp />
+      <Categories />
       <FlashSale />
       <JustForYou />
-      <Categories />
     </div>
   );
 };
