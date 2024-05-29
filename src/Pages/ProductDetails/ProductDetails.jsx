@@ -10,6 +10,7 @@ import { TiStarFullOutline } from "react-icons/ti";
 import ReactImageMagnify from "react-image-magnify";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Link } from "react-router-dom";
 
 const ProductDetails = () => {
   const images = [
@@ -41,7 +42,7 @@ const ProductDetails = () => {
     ];
     
 
-    
+
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-5  p-2">
@@ -156,9 +157,9 @@ const ProductDetails = () => {
               </button>
             </div>
             <div className="flex-1">
-              <button className="bg-[#f57224] hover:bg-[#7e3003] w-full py-2 font-semibold text-white rounded">
+              <Link to="/addToCard" className="bg-[#f57224] hover:bg-[#7e3003] w-full py-2 font-semibold text-white rounded">
                 Add To Cart
-              </button>
+              </Link>
             </div>
           </div>
         </div>
