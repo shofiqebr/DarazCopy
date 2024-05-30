@@ -37,11 +37,13 @@ const Navbar = () => {
         {/* start Dataz Photo Navbar */}
         <div className="p-2 flex  flex-col md:flex-row items-center justify-between gap-5">
           <div className="flex items-center gap-5">
-            <img
-              className="w-36 hidden lg:block"
-              src="https://i.ibb.co/P18jcD0/3ac46ea5-a376-41cc-981f-21fa690468c0.png"
-              alt=""
-            />
+            <Link to="/">
+              <img
+                className="w-36 hidden lg:block"
+                src="https://i.ibb.co/P18jcD0/3ac46ea5-a376-41cc-981f-21fa690468c0.png"
+                alt=""
+              />
+            </Link>
             <div className="relative">
               <input
                 id="id-s03"
