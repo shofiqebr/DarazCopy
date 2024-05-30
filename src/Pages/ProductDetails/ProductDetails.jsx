@@ -39,10 +39,7 @@ const ProductDetails = () => {
       image:
         "https://static-01.daraz.com.bd/p/190e7f0df8e9e2edf300eff263b63d49.jpg_750x750.jpg_.webp",
     },
-    ];
-    
-
-
+  ];
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-5  p-2">
@@ -157,7 +154,10 @@ const ProductDetails = () => {
               </button>
             </div>
             <div className="flex-1">
-              <Link to="/addToCard" className="bg-[#f57224] hover:bg-[#7e3003] w-full py-2 font-semibold text-white rounded">
+              <Link
+                to="/addToCard"
+                className="bg-[#f57224] hover:bg-[#7e3003] w-full py-2 px-10 font-semibold text-white rounded"
+              >
                 Add To Cart
               </Link>
             </div>

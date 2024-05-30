@@ -75,7 +75,9 @@ const Navbar = () => {
             </div>
             <p className="text-white">|</p>
             <div className="flex items-center text-white gap-1 hover:bg-[#ad3c04bb] rounded-md py-2 px-4">
-              <BsCart className="text-xl" />
+              <Link to="/addToCard">
+                <BsCart className="text-xl" />
+              </Link>
             </div>
           </div>
         </div>
