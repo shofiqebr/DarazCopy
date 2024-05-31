@@ -1,3 +1,5 @@
+import { CiHeart } from "react-icons/ci";
+
 const AjkerDeal = () => {
   const data = [
     {
@@ -174,7 +176,7 @@ const AjkerDeal = () => {
             </div>
           </div>
         </div>
-              <div className="md:w-[80%] bg-white p-5 rounded">
+        <div className="md:w-[80%] bg-white p-5 rounded">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <h2 className="text-[18px] font-medium">জিন্স - ১,৫১২ টি</h2>
             <div>
@@ -188,9 +190,15 @@ const AjkerDeal = () => {
           </div>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3">
             {data.map((item) => (
-              <div className="text-center space-y-2 rounded hover:shadow-md p-2 hover:border" key={item.id}>
+              <div
+                className="text-center relative space-y-2 rounded hover:shadow-md p-2 hover:border"
+                key={item.id}
+              >
                 <img className="w-full" src={item.image} alt="" />
-                <p className="text-xs">{item.name}</p> 
+                <div className="absolute cursor-pointer top-1 right-9 border rounded-full bg-white">
+                  <CiHeart className="text-2xl" />
+                </div>
+                <p className="text-xs">{item.name}</p>
                 <p className="text-xs text-red-500 font-bold">৳{item.price}</p>
               </div>
             ))}
