@@ -5,6 +5,8 @@ import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import AddToCart from "../Pages/AddToCart/AddToCart";
 import Checkout from "../Pages/Checkout/Checkout";
 import AjkerDeal from "../Pages/AjkerDeal/AjkerDeal";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 const Routes = createBrowserRouter([
   {
@@ -30,6 +32,10 @@ const Routes = createBrowserRouter([
       {
         path: "/ajkerDeal",
         element: <AjkerDeal />,
+      },
+      {
+        path: "/register",
+        element: <Register/>
       },
     ],
   },
