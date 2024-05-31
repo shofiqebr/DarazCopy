@@ -1,5 +1,6 @@
 import { CiUser } from "react-icons/ci";
 import logo from "../../../src/assets/google.svg";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -143,7 +144,13 @@ const Register = () => {
           </button>
         </div>
         <div className="mt-4 text-center">
-          <p className="font-bold">অথবা</p>
+          <p className="font-bold mb-2">অথবা</p>
+          <Link
+            to="/login"
+            className="cursor-pointer text-xs font-bold text-green-500 hover:text-red-600"
+          >
+            লগইন
+          </Link>
           <div className="w-44 bg-slate-200 hover:bg-slate-100 p-2 rounded mx-auto mt-5 mb-7">
             <button className="flex items-center gap-4 font-semibold text-black">
               <img className="size-7" src={logo} alt="" />
