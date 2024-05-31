@@ -44,7 +44,7 @@ const ProductDetails = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-5  p-2">
       <div className="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-5 place-items-center place-content-center	">
-        <Carousel>
+        <Carousel className="z-50">
           {images.map((item) => (
             <div key={item.id}>
               <ReactImageMagnify
@@ -69,7 +69,7 @@ const ProductDetails = () => {
             </div>
           ))}
         </Carousel>
-        <div className="">
+        <div className="p-4">
           <h1 className="text-xl font-semibold">
             Real Madrid Home Jersey - Premium - 23/24 Season - Official Real
             Madrid Home Jersey For Dedicated Fans
@@ -273,7 +273,7 @@ const ProductDetails = () => {
                 </div>
               </div>
               <div className="h-24 w-[1px] bg-gray-400"></div>
-              <div className="flex gap-3">
+              <div className="flex flex-col md:flex-row  gap-3">
                 <div className="flex flex-col gap-3 -mt-1">
                   <div className="flex text-[#faca51]">
                     <TiStarFullOutline className="text-[20px]" />
@@ -311,29 +311,29 @@ const ProductDetails = () => {
                     <TiStarFullOutline className="text-[20px] " />
                   </div>
                 </div>
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col p-3 gap-6">
                   <progress
-                    className="progress progress-warning w-56"
+                    className="progress progress-warning md:w-52"
                     value={0}
                     max="100"
                   ></progress>
                   <progress
-                    className="progress progress-warning w-56"
+                    className="progress progress-warning md:w-52"
                     value="10"
                     max="100"
                   ></progress>
                   <progress
-                    className="progress progress-warning w-56"
+                    className="progress progress-warning md:w-52"
                     value="40"
                     max="100"
                   ></progress>
                   <progress
-                    className="progress progress-warning w-56"
+                    className="progress progress-warning md:w-52"
                     value="70"
                     max="100"
                   ></progress>
                   <progress
-                    className="progress progress-warning w-56"
+                    className="progress progress-warning md:w-52"
                     value="100"
                     max="100"
                   ></progress>
@@ -389,7 +389,6 @@ const ProductDetails = () => {
                   <TiStarFullOutline className="text-[12px]" />
                   <TiStarFullOutline className="text-[12px]" />
                 </div>
-                {/* ({rating}) */}
               </div>
             </div>
           </div>

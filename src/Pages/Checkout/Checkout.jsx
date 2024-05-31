@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 
 const Checkout = () => {
@@ -143,8 +144,7 @@ const Checkout = () => {
             </div>
           </form>
         </div>
-
-        <div className="lg:w-[40%]  ">
+        <div className="lg:w-[40%]">
           <h1 className="text-center text-2xl font-semibold">YOUR ORDER</h1>
           <div className="rounded bg-white p-6 mt-5">
             <div className="flex gap-4 justify-between items-center ">
