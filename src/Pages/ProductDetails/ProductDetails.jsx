@@ -220,7 +220,7 @@ const ProductDetails = () => {
             </div>
             <p className="text-[#1a9cb7] font-bold">CHAT</p>
           </div>
-          <div className="flex mt-4 justify-between">
+          <div className="flex mt-4 justify-betwe+en">
             <div className="p-4 border">
               <p className="text-[14px]">Warranty not available</p>
               <h1 className="text-xl font-semibold mt-4">70%</h1>
