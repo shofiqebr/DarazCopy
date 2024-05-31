@@ -59,14 +59,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex justify-center  items-center md:p-0 rounded-md">
-            <div className="flex items-center text-white gap-1 hover:bg-[#ad3c04bb] rounded-xl py-2 px-4">
+            <Link to="/login" className="flex items-center text-white gap-1 hover:bg-[#ad3c04bb] rounded-xl py-2 px-4">
               <CiUser className="text-xl" />
               <button>Login</button>
-            </div>
+            </Link>
             <p className="text-white">|</p>
-            <div className="flex items-center text-white gap-1 hover:bg-[#ad3c04bb] rounded-xl py-2 px-4">
+            <Link to="/register" className="flex items-center text-white gap-1 hover:bg-[#ad3c04bb] rounded-xl py-2 px-4">
               <button>SingUp</button>
-            </div>
+            </Link>
             <p className="text-white">|</p>
             <div className="lg:flex items-center hidden gap-2 hover:bg-[#ad3c04bb] rounded-xl py-2 px-4">
               <TfiWorld className="text-xl text-white" />

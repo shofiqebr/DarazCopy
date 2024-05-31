@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 mt-4">
-      <form className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200">
+      <form className="overflow-hidden rounded border bg-white text-slate-500 shadow-md shadow-slate-200">
         {/*  <!-- Body--> */}
         <div className="p-6">
-          <header className="mb-4 text-center bg-[#4C9ED9] p-4 rounded ">
+          <header className="mb-4 text-center bg-[#f85606] p-4 rounded ">
             <h3 className="text-xl flex items-center justify-center gap-3 font-medium text-white">
               <CiUser className="text-2xl" />
               রেজিস্ট্রেশন (নতুন ইউজার)
@@ -22,7 +22,7 @@ const Register = () => {
                 type="text"
                 name="id-b03"
                 placeholder="your name"
-                className="peer relative h-10 w-full rounded border border-slate-200 px-4 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                className="peer relative h-10 w-full rounded border border-slate-200 px-4 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-gray-200 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
               />
               <label
                 htmlFor="id-b03"
@@ -38,7 +38,7 @@ const Register = () => {
                 type="email"
                 name="id-b03"
                 placeholder="your gmail"
-                className="peer relative h-10 w-full rounded border border-slate-200 px-4 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                className="peer relative h-10 w-full rounded border border-slate-200 px-4 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-gray-200 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
               />
               <label
                 htmlFor="id-b03"
@@ -54,7 +54,7 @@ const Register = () => {
                 type="number"
                 name="id-b13"
                 placeholder="your password"
-                className="peer relative h-10 w-full rounded border border-slate-200 px-4 pr-12 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                className="peer relative h-10 w-full rounded border border-slate-200 px-4 pr-12 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-gray-200 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
               />
               <label
                 htmlFor="id-b13"
@@ -70,7 +70,7 @@ const Register = () => {
                 type="password"
                 name="id-b13"
                 placeholder="your password"
-                className="peer relative h-10 w-full rounded border border-slate-200 px-4 pr-12 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                className="peer relative h-10 w-full rounded border border-slate-200 px-4 pr-12 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-gray-200 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
               />
               <label
                 htmlFor="id-b13"
@@ -100,7 +100,7 @@ const Register = () => {
                 type="password"
                 name="id-b13"
                 placeholder="your password"
-                className="peer relative h-10 w-full rounded border border-slate-200 px-4 pr-12 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                className="peer relative h-10 w-full rounded border border-slate-200 px-4 pr-12 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-gray-200 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
               />
               <label
                 htmlFor="id-b13"
@@ -139,7 +139,7 @@ const Register = () => {
         </div>
         {/*  <!-- Action base sized basic button --> */}
         <div className="flex justify-end p-4 ">
-          <button className="inline-flex h-10 w-44 mx-auto items-center justify-center gap-2 whitespace-nowrap rounded bg-emerald-500 px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-emerald-600 focus:bg-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+          <button className="inline-flex h-10 w-44 mx-auto items-center justify-center gap-2 whitespace-nowrap rounded bg-[#f85606] px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-[#9a471d] focus-visible:outline-none disabled:cursor-not-allowed  disabled:shadow-none">
             <span>রেজিস্টার</span>
           </button>
         </div>
@@ -147,7 +147,7 @@ const Register = () => {
           <p className="font-bold mb-2">অথবা</p>
           <Link
             to="/login"
-            className="cursor-pointer text-xs font-bold text-green-500 hover:text-red-600"
+            className="cursor-pointer text-xs font-bold text-[#f85606] hover:text-red-600"
           >
             লগইন
           </Link>
