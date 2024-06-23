@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { TbCurrencyTaka } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import flashImg from '../../assets/flashcard.jpg'
 
 const FlashSaleCard = () => {
   const [groups, setGroups] = useState([]);
@@ -65,6 +66,132 @@ const FlashSaleCard = () => {
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-4 ">
+
+
+  <Link to='/product'>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    </Link>
+
+
+    
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+    <div>
+      <img src={flashImg} alt="" />
+      <p className="text-xl">1 set light luxury four leaf clover pendent</p>
+      <p className="text-red-400 flex  items-center"><TbCurrencyTaka /> 268</p>
+      <div className="flex">
+        <del className="flex justify-center items-center"><TbCurrencyTaka /> 417</del>
+        <p>-35%</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
       {groups?.map((item, id) => {
         return (
           <Link to="/details" className="hover:shadow hover:border" key={id}>

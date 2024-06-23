@@ -64,7 +64,7 @@ const Navbar = () => {
               <button>Login</button>
             </Link>
             <p className="text-white">|</p>
-            <Link to="/register" className="flex items-center text-white gap-1 hover:bg-[#ad3c04bb] rounded-xl py-2 px-4">
+            <Link to="/registration" className="flex items-center text-white gap-1 hover:bg-[#ad3c04bb] rounded-xl py-2 px-4">
               <button>SingUp</button>
             </Link>
             <p className="text-white">|</p>
@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
             <p className="text-white">|</p>
             <div className="flex items-center text-white gap-1 hover:bg-[#ad3c04bb] rounded-md py-2 px-4">
-              <Link to="/addToCard">
+              <Link to="/cart">
                 <BsCart className="text-xl" />
               </Link>
             </div>

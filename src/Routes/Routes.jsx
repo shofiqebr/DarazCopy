@@ -1,12 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Root";
 import Home from "../Pages/Home/Home";
-import ProductDetails from "../Pages/ProductDetails/ProductDetails";
-import AddToCart from "../Pages/AddToCart/AddToCart";
+import Product from "../Pages/product/Product";
+import Cart from "../Pages/cart/Cart";
 import Checkout from "../Pages/Checkout/Checkout";
-import AjkerDeal from "../Pages/AjkerDeal/AjkerDeal";
-import Register from "../Pages/Register/Register";
+import AllCategory from "../Pages/allCategory/AllCategory";
+import Category from "../Pages/category/Category";
+import Landing from "../Pages/landing/Landing";
 import Login from "../Pages/Login/Login";
+import Registration from "../Pages/registration/Registration";
+
+
 
 const Routes = createBrowserRouter([
   {
@@ -18,29 +22,42 @@ const Routes = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/details",
-        element: <ProductDetails />,
+        path: "/allCategory",
+        element: <AllCategory />,
+      },
+  
+      {
+        path: "/category",
+        element: <Category />,
       },
       {
-        path: "/addToCard",
-        element: <AddToCart />,
+        path: "/landing",
+        element: <Landing />,
       },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/registration",
+        element: <Registration />,
+      },
+      {
+        path: "/product",
+        element: <Product />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+  
+      
       {
         path: "/checkout",
         element: <Checkout />,
       },
-      {
-        path: "/ajkerDeal",
-        element: <AjkerDeal />,
-      },
-      {
-        path: "/register",
-        element: <Register/>
-      },
-      {
-        path: "/login",
-        element: <Login/>
-      },
+    
+
     ],
   },
 ]);

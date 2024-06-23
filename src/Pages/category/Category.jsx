@@ -1,6 +1,8 @@
+// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { CiHeart } from "react-icons/ci";
 
-const AjkerDeal = () => {
+const Category = () => {
   const data = [
     {
       id: 1,
@@ -76,7 +78,12 @@ const AjkerDeal = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-4">
-      <h1>Ajker Deal Pages</h1>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Classy Style | Category</title>
+                
+            </Helmet>
+
       <div className="flex flex-col md:flex-row gap-6 mt-8">
         <div className="md:w-[20%] bg-white p-5 rounded">
           <h1 className="text-sm">ফিল্টার</h1>
@@ -209,4 +216,4 @@ const AjkerDeal = () => {
   );
 };
 
-export default AjkerDeal;
+export default Category;

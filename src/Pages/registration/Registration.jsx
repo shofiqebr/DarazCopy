@@ -1,10 +1,24 @@
 import { CiUser } from "react-icons/ci";
 import logo from "../../../src/assets/google.svg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet";
 
-const Register = () => {
+const Registration = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 mt-4">
+    <div className="max-w-4xl mx-auto px-4 mt-4 py-3">
+
+
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Classy Style | Registration</title>
+               
+            </Helmet>
+
+
+
+
       <form className="overflow-hidden rounded border bg-white text-slate-500 shadow-md shadow-slate-200">
         {/*  <!-- Body--> */}
         <div className="p-6">
@@ -163,4 +177,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Registration;

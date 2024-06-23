@@ -1,4 +1,6 @@
 // import ReactImageMagnify from "react-image-magnify";
+// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { BsCashCoin } from "react-icons/bs";
 import { CiHeart, CiShare2 } from "react-icons/ci";
 import { FaBangladeshiTakaSign, FaStar, FaStarHalf } from "react-icons/fa6";
@@ -12,7 +14,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 
-const ProductDetails = () => {
+const Product = () => {
   const images = [
     {
       id: 1,
@@ -43,8 +45,16 @@ const ProductDetails = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-5  p-2">
+              <Helmet>
+                <meta charSet="utf-8" />
+                <title>Classy Style | Product</title>
+                <link rel="canonical" href="http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg" />
+            </Helmet>
+
+
+
       <div className="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-5 place-items-center place-content-center	">
-        <Carousel className="z-50">
+        <Carousel className="z-10">
           {images.map((item) => (
             <div key={item.id}>
               <ReactImageMagnify
@@ -110,7 +120,7 @@ const ProductDetails = () => {
             </div>
           </div>
           <hr className="mt-4" />
-          <div className="flex gap-6 mt-3">
+          <div className="flex gap-2 mt-3">
             <h1 className="text-[#757575]">Color Family</h1>
             <div className="">
               <h1 className="">Not Specified</h1>
@@ -124,16 +134,16 @@ const ProductDetails = () => {
             <div className="">
               <h1 className="">Int </h1>
               <div className="flex gap-2 items-center">
-                <button className="py-1 text-[#f36f21] px-4  text-[14px] border mt-1 border-[#f36f21]">
+                <button className="py-1 text-[#f36f21] px-1 md:px-4  md:text-[14px] text-xs border mt-1 border-[#f36f21]">
                   M
                 </button>
-                <button className="py-1 px-4 text-[14px] border mt-1 ">
+                <button className="py-1 px-1 md:px-4 text-xs md:text-[14px] border mt-1 ">
                   XXL
                 </button>
-                <button className="py-1 px-4 text-[14px] border mt-1 ">
+                <button className="py-1 px-1 md:px-4 text-xs md:text-[14px] border mt-1 ">
                   L
                 </button>
-                <button className="py-1  px-4 text-[14px] border mt-1">
+                <button className="py-1 px-1  md:px-4 text-xs md:text-[14px] border mt-1">
                   XL
                 </button>
               </div>
@@ -149,14 +159,16 @@ const ProductDetails = () => {
           </div>
           <div className="mt-4 flex gap-3 items-center ">
             <div className="flex-1">
+              <Link to='/landing'>
               <button className="bg-[#2abbe8] hover:bg-[#0881a6] w-full py-2 font-semibold text-white rounded">
                 Buy Now
               </button>
+              </Link>
             </div>
             <div className="flex-1">
               <Link
-                to="/addToCard"
-                className="bg-[#f57224] hover:bg-[#7e3003] w-full py-2 px-10 font-semibold text-white rounded"
+                to="/cart"
+                className="bg-[#f57224] hover:bg-[#7e3003] w-full py-2 lg:px-10 md:px-5 px-3 font-semibold text-white rounded"
               >
                 Add To Cart
               </Link>
@@ -164,10 +176,10 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="bg-[#fafafa] rounded p-4">
-          <div className="flex justify-end cursor-pointer">
+          {/* <div className="flex justify-end cursor-pointer">
             <IoIosInformationCircleOutline className="text-end" />
-          </div>
-          <div className="flex justify-between items-center mt-5">
+          </div> */}
+          {/* <div className="flex justify-between items-center mt-5">
             <div className="flex gap-2 items-center">
               <IoLocationOutline className="text-2xl" />
               <p className="text-[14px]">
@@ -175,8 +187,8 @@ const ProductDetails = () => {
               </p>
             </div>
             <p className="text-[#1a9cb7]">CHANGE</p>
-          </div>
-          <hr className="mt-1" />
+          </div> */}
+          {/* <hr className="mt-1" /> */}
           <div className="flex justify-between items-center mt-5">
             <div className="flex gap-2 items-center">
               <MdOutlineDeliveryDining className="text-2xl" />
@@ -212,15 +224,15 @@ const ProductDetails = () => {
               <p className="text-[14px]">Warranty not available</p>
             </div>
           </div>
-          <div className="flex justify-between items-center mt-5">
+          {/* <div className="flex justify-between items-center mt-5">
             <div className="flex gap-2 items-center">
               <p className="text-[14px]">
                 <span>Sold by</span> <br /> <span>S M Accessories</span>
               </p>
             </div>
             <p className="text-[#1a9cb7] font-bold">CHAT</p>
-          </div>
-          <div className="flex mt-4 justify-betwe+en">
+          </div> */}
+          <div className="flex mt-4 justify-between">
             <div className="p-4 border">
               <p className="text-[14px]">Warranty not available</p>
               <h1 className="text-xl font-semibold mt-4">70%</h1>
@@ -237,13 +249,44 @@ const ProductDetails = () => {
         </div>
       </div>
       {/* Ratings & Reviews */}
-      <h1 className="mt-3 max-w-screen-xl mx-auto  font-bold">
+     
+      <div className="max-w-screen-xl mx-auto mt-5 ">
+        <div className="flex flex-col md:flex-row  gap-1 ">
+          <div className="md:w-[80%] p-4">
+
+            {/* product description section */}
+            <section className="bg-white p-5">
+                 <div className="flex justify-between items-center bg-[#E9EAEB] p-3"> 
+                  <p className="text-lg font-semibold">product description : pretend t-shirt for men</p>
+                  <p>Deal code : 12434</p>
+                 </div>
+
+                 <div className="pl-5 py-3">
+                  <ul>
+                  <li className="list-disc">Fashionable Printed T-shirt for Men</li>
+                  <li className="list-disc">Product type: T-shirt</li>
+                  <li className="list-disc">Fabric: Polyester</li>
+                  <li className="list-disc">Size: M,L,XL</li>
+                  <li className="list-disc">M - Length 28", chest 40".</li>
+                  <li className="list-disc">L - Length 29", chest: 42".</li>
+                  <li className="list-disc">XL - Length 30", chest 44"</li>
+                  <li className="list-disc">Work: Print</li>
+                  <li className="list-disc">GSM : 130-140</li>
+                  <li className="list-disc">Casual Design</li>
+                  <li className="list-disc">Color Guarantee</li>
+                  <li className="list-disc">Fashionable & Elegant Design</li>
+                  <li className="list-disc">Product color may slightly vary due to photographic lighting sources or your monitor settings.</li>
+                  <li className="list-disc">Note -</li>
+
+                  </ul>
+                 </div>
+            </section>
+
+            <section className="bg-white mt-5 px-5">
+            <h1 className="py-5 mx-auto  font-bold">
         Ratings & Reviews
       </h1>
-      <div className="max-w-screen-xl mx-auto mt-5 ">
-        <div className="flex flex-col md:flex-row  gap-4 ">
-          <div className="md:w-[80%] bg-white p-4">
-            <div className="flex gap-12">
+            <div className="flex flex-col md:flex-row lg:gap-12 md:gap-4">
               <div>
                 <div>
                   <div className="flex items-center gap-7">
@@ -272,7 +315,7 @@ const ProductDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className="h-24 w-[1px] bg-gray-400"></div>
+              <div className="h-24 w-[1px] bg-gray-400 hidden md:block"></div>
               <div className="flex flex-col md:flex-row  gap-3">
                 <div className="flex flex-col gap-3 -mt-1">
                   <div className="flex text-[#faca51]">
@@ -340,9 +383,13 @@ const ProductDetails = () => {
                 </div>
               </div>
             </div>
-            <hr className="mt-12" />
+            <hr className="mt-12 pb-3" />
+            </section>
+
+
+          
             {/* Comments Parts  */}
-            <div className="mt-3">
+            {/* <div className="mt-3">
               <p className="text-sm">What people like about it</p>
               <hr className="mt-3" />
               <div className="flex items-center justify-between mt-3">
@@ -366,9 +413,12 @@ const ProductDetails = () => {
                 কে....
               </p>
               <div></div>
-            </div>
+            </div> */}
           </div>
-          <div className="md:w-[20%] bg-white p-2">
+
+
+
+          <div className="md:w-[20%] bg-white p-2 my-4">
             <h1 className="text-[12px] font-bold">
               People Who Viewed This Item Also Viewed
             </h1>
@@ -398,4 +448,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default Product;
