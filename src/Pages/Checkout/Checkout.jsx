@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
+import Title from "../../Components/title/Title";
 
 const Checkout = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -10,6 +11,8 @@ const Checkout = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-6">
+
+<Title title='Checkout' />
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="lg:w-[60%] mt-4 ">
           <h1 className="text-xl font-semibold ">BILLING & SHIPPING</h1>
@@ -217,7 +220,7 @@ const Checkout = () => {
                 </p>
               </label>
             </div>
-            <div className="bg-red-500 hover:bg-red-800 rounded-full text-center p-2 mt-6">
+            <div className="bg-[#f85606] hover:bg-red-800 rounded-full text-center p-2 mt-6">
               <button className="text-white text-sm font-bold">
                 PROCEED TO CHECKOUT
               </button>

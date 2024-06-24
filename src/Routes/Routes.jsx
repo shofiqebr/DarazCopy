@@ -5,10 +5,11 @@ import Product from "../Pages/product/Product";
 import Cart from "../Pages/cart/Cart";
 import Checkout from "../Pages/Checkout/Checkout";
 import AllCategory from "../Pages/allCategory/AllCategory";
-import Category from "../Pages/category/Category";
+
 import Landing from "../Pages/landing/Landing";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/registration/Registration";
+import Category from "../Pages/category/Category";
 
 
 
@@ -56,6 +57,8 @@ const Routes = createBrowserRouter([
         path: "/checkout",
         element: <Checkout />,
       },
+    
+    
     
 
     ],

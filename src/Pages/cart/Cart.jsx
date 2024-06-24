@@ -1,16 +1,13 @@
 // import { Helmet } from "react-helmet";
-import { Helmet } from "react-helmet-async";
+
 import { Link } from "react-router-dom";
+import Title from "../../Components/title/Title";
 
 const Cart = () => {
     return (
       <div className="mt-8 max-w-screen-xl mx-auto px-4 pb-5 bg-[#f9f9f9]">
 
-           <Helmet>
-                <meta charSet="utf-8" />
-                <title>Classy Style | Cart</title>
-                <link rel="canonical" href="http://static.ajkerdeal.com/images/dealdetails/ad-logo.svg" />
-            </Helmet>
+<Title title='Cart' />
 
 
 
@@ -103,10 +100,10 @@ const Cart = () => {
             <div className="mt-8 flex flex-col-reverse gap-6 lg:flex-row justify-between items-center">
               <div className="flex gap-4 items-center">
                 <input className="text-center border rounded-full py-2 md:px-4 " type="text" name="" id="" placeholder="Coupon Code" />
-                <button className="py-2 px-6 bg-red-500 hover:bg-red-800 font-bold text-white rounded-full text-sm">APPLY COUPON</button>
+                <button className="py-2 px-6 bg-[#F85606] hover:bg-red-800 font-bold text-white rounded-full text-sm">APPLY COUPON</button>
               </div>
               <div>
-                <button className="py-2 px-6 bg-red-400 hover:bg-red-800 font-bold text-white rounded-full text-sm">UPDATE CART</button>
+                <button className="py-2 px-6 bg-[#F85606] hover:bg-red-800 font-bold text-white rounded-full text-sm">UPDATE CART</button>
               </div>
             </div>
           </div>
@@ -133,7 +130,7 @@ const Cart = () => {
               <p className="font-semibold text-xl">Total</p>
               <p className="text-xl font-semibold text-[#db3a87]">350৳ </p>
             </div>
-            <div className="bg-red-500 hover:bg-red-800 rounded-full text-center p-2 mt-6">
+            <div className="bg-[#F85606] hover:bg-red-800 rounded-full text-center p-2 mt-6">
               <Link to='/checkout'>
               <button className="text-white text-sm font-bold">
                 PROCEED TO CHECKOUT

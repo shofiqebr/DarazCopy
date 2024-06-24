@@ -1,6 +1,7 @@
-// import { Helmet } from "react-helmet";
-import { Helmet } from "react-helmet-async";
+
+
 import { CiHeart } from "react-icons/ci";
+import Title from "../../Components/title/Title";
 
 const Category = () => {
   const data = [
@@ -78,25 +79,21 @@ const Category = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-4">
-       <Helmet>
-                <meta charSet="utf-8" />
-                <title>Classy Style | Category</title>
-                
-            </Helmet>
-
+       <Title title='category'/>
       <div className="flex flex-col md:flex-row gap-6 mt-8">
         <div className="md:w-[20%] bg-white p-5 rounded">
-          <h1 className="text-sm">ফিল্টার</h1>
+          <h1 className="text-xl font-bold">Filter</h1>
           <hr className="mt-4" />
           <div className="mt-4">
-            <p className="font-bold text-xs">সাব ক্যাটাগরি</p>
+            <p className="font-bold text-sm">Sub Category </p>
             {/* Filter Category  */}
             <div className="form-control flex-row items-center gap-1 mt-2">
               <label className="cursor-pointer label">
                 <input
                   type="checkbox"
                   defaultChecked
-                  className="checkbox checkbox-xs rounded-none checkbox-accent"
+                  className="checkbox checkbox-xs rounded-none"
+                  style={{ '--chkbg': '#f85606', '--chkfg': '#ffffff' }}
                 />
               </label>
               <p className="text-xs">জিন্স</p>
@@ -188,10 +185,9 @@ const Category = () => {
             <h2 className="text-[18px] font-medium">জিন্স - ১,৫১২ টি</h2>
             <div>
               <select className="select select-bordered select-xs w-52">
-                <option>নতুন</option>
-                <option>জনপ্রিয় </option>
-                <option>দাম : সবচেয়ে কম থেকে বেশী </option>
-                <option>দাম : সবচেয়ে বেশী থেকে কম </option>
+                <option>New</option>
+                <option>Popular </option>
+            
               </select>
             </div>
           </div>
